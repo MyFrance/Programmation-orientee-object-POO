@@ -14,7 +14,8 @@ class Utilisateur:
 # Classe héritage
 class Junior(Utilisateur):
     def __init__(self, nom, prenom):
-        Utilisateur.__init__(self, nom, prenom)
+        # Utilisation de la fonction super
+        super().__init__(nom, prenom)
 
     def restriction(self):
         for projet in projets:
